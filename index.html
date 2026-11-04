@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="data:,">
+     <title>Hotel Card</title>
+     <meta name="description"
+          content="کامپوننت کارت معرفی و رزرو آنلاین هتل و اقامتگاه با طراحی شیشه‌ای (Glassmorphism)، اسلایدر تصاویر Swiper و ساختار استاندارد BEM.">
+     <link rel="stylesheet" href="css/font.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+     <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+     <main class="hotel-grid">
+
+          <article class="hotel-card">
+               <button type="button" class="hotel-card__fav-btn" aria-label="افزودن به علاقه‌مندی‌ها"
+                    aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+               </button>
+
+               <div class="hotel-card__rating" role="img" aria-label="امتیاز ۴.۸ از ۵ بر اساس ۳۱ نظر">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>۴.۸ (۳۱)</span>
+               </div>
+
+               <div class="swiper hotel-card__slider">
+                    <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_1.jpg" alt="نمای بیرونی هتل سنتی عتیق اصفهان" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_2.jpg" loading="lazy" alt="حیاط و حوض هتل سنتی عتیق" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_3.jpg" loading="lazy" alt="نمای داخلی اتاق هتل سنتی عتیق" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_4.jpg" loading="lazy" alt="تزئینات سنتی هتل عتیق اصفهان" />
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next" aria-label="تصویر بعدی"></div>
+                    <div class="swiper-button-prev" aria-label="تصویر قبلی"></div>
+                    <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="hotel-card__gradient"></div>
+
+               <div class="hotel-card__top-info">
+                    <h3 class="hotel-card__title">
+                         <a href="#" target="_blank" rel="noopener noreferrer"
+                              class="hotel-card__title-link">هتل سنتی عتیق اصفهان</a>
+                    </h3>
+                    <div class="hotel-card__location">
+                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                         <span>اصفهان، میدان شهدا</span>
+                    </div>
+               </div>
+
+               <div class="hotel-card__action-box">
+                    <div class="hotel-card__price">
+                         <div class="hotel-card__discount-row">
+                              <del class="hotel-card__price-old"><span class="visually-hidden">قیمت قبل از تخفیف:
+                                   </span>۲,۳۰۰,۰۰۰</del>
+                              <span class="hotel-card__discount-badge">۱۷٪-</span>
+                         </div>
+                         <div class="hotel-card__price-current">
+                              <span class="hotel-card__price-amount">۱,۹۰۰,۰۰۰</span>
+                              <span class="hotel-card__price-currency">تومان / شب</span>
+                         </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="hotel-card__btn-reserve">رزرو آنلاین</a>
+               </div>
+          </article>
+
+          <article class="hotel-card">
+               <button type="button" class="hotel-card__fav-btn" aria-label="افزودن به علاقه‌مندی‌ها"
+                    aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+               </button>
+
+               <div class="hotel-card__rating" role="img" aria-label="امتیاز ۴.۹ از ۵ بر اساس ۵۴ نظر">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>۴.۹ (۵۴)</span>
+               </div>
+
+               <div class="swiper hotel-card__slider">
+                    <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_2.jpg" alt="حیاط اقامتگاه بوم‌گردی سرای عامری‌ها کاشان" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_3.jpg" loading="lazy" alt="اتاق شاه‌نشین سرای عامری‌ها" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_4.jpg" loading="lazy" alt="معماری سنتی سرای عامری‌ها" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_1.jpg" loading="lazy" alt="نمای شب اقامتگاه عامری‌ها" />
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next" aria-label="تصویر بعدی"></div>
+                    <div class="swiper-button-prev" aria-label="تصویر قبلی"></div>
+                    <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="hotel-card__gradient"></div>
+
+               <div class="hotel-card__top-info">
+                    <h3 class="hotel-card__title">
+                         <a href="#" target="_blank" rel="noopener noreferrer"
+                              class="hotel-card__title-link">اقامتگاه بوم‌گردی و بوتیک هتل تاریخی سرای عامری‌ها
+                              کاشان</a>
+                    </h3>
+                    <div class="hotel-card__location">
+                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                         <span>کاشان، خیابان علوی، محله تاریخی سلطان امیراحمد</span>
+                    </div>
+               </div>
+
+               <div class="hotel-card__action-box">
+                    <div class="hotel-card__price">
+                         <div class="hotel-card__discount-row">
+                              <del class="hotel-card__price-old"><span class="visually-hidden">قیمت قبل از تخفیف:
+                                   </span>۳,۵۰۰,۰۰۰</del>
+                              <span class="hotel-card__discount-badge">۲۰٪-</span>
+                         </div>
+                         <div class="hotel-card__price-current">
+                              <span class="hotel-card__price-amount">۲,۸۰۰,۰۰۰</span>
+                              <span class="hotel-card__price-currency">تومان / شب</span>
+                         </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="hotel-card__btn-reserve">رزرو آنلاین</a>
+               </div>
+          </article>
+
+          <article class="hotel-card">
+               <button type="button" class="hotel-card__fav-btn" aria-label="افزودن به علاقه‌مندی‌ها"
+                    aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+               </button>
+
+               <div class="hotel-card__rating" role="img" aria-label="امتیاز ۴.۶ از ۵ بر اساس ۱۹ نظر">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <span>۴.۶ (۱۹)</span>
+               </div>
+
+               <div class="swiper hotel-card__slider">
+                    <div class="swiper-wrapper">
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_3.jpg" alt="نمای اتاق هتل بوتیک وکیل شیراز" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_4.jpg" loading="lazy" alt="تزئینات شیشه‌رنگی هتل وکیل" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_1.jpg" loading="lazy" alt="ایوان اصلی هتل وکیل شیراز" />
+                         </div>
+                         <div class="swiper-slide">
+                              <img src="images/hotelImage_2.jpg" loading="lazy" alt="حیاط مرکزی هتل بوتیک وکیل" />
+                         </div>
+                    </div>
+
+                    <div class="swiper-button-next" aria-label="تصویر بعدی"></div>
+                    <div class="swiper-button-prev" aria-label="تصویر قبلی"></div>
+                    <div class="swiper-pagination"></div>
+               </div>
+
+               <div class="hotel-card__gradient"></div>
+
+               <div class="hotel-card__top-info">
+                    <h3 class="hotel-card__title">
+                         <a href="#" target="_blank" rel="noopener noreferrer"
+                              class="hotel-card__title-link">هتل بوتیک سنتی وکیل شیراز</a>
+                    </h3>
+                    <div class="hotel-card__location">
+                         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                         <span>شیراز، خیابان لطفعلی‌خان زند</span>
+                    </div>
+               </div>
+
+               <div class="hotel-card__action-box">
+                    <div class="hotel-card__price">
+                         <div class="hotel-card__price-current">
+                              <span class="hotel-card__price-amount">۲,۱۵۰,۰۰۰</span>
+                              <span class="hotel-card__price-currency">تومان / شب</span>
+                         </div>
+                    </div>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                         class="hotel-card__btn-reserve">رزرو آنلاین</a>
+               </div>
+          </article>
+
+     </main>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="js/index.js"></script>
+</body>
+
+</html>
