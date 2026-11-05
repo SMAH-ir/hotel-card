@@ -8,7 +8,6 @@ A responsive hotel card with an image slider and a glass-style design. Built wit
 
 ![Desktop view](screenshots/desktop.jpg)
 ![Mobile view](screenshots/mobile.jpg)
-![Slider](screenshots/slider.jpg)
 
 ## Features
 
